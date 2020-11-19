@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	 
+}
+
+.grid_container{
+	display: grid;
+	grid-template: 
+	"header" 100px
+	"sidebar" 210px
+	"main"	auto
+	"footer" 50px
+	;
+}
+
+.header{
+	grid-area: header;
+	background-color: #ba6d3a;
+}
+
+#logo{
+    	width: 260px;
+    	height: 80px;
+    	background-color:#ba6d3a;
+    	margin-top: 10px; 
+    	margin-left: auto;
+        margin-right: auto;
+    	background-image: url(../img/logorivera.png);
+    }
+
+.titulo{
+	font-size: 21px;
+	color:#b7411c;
+	font-weight: bolder;
+	padding-top:18px;
+	text-align: center;
+
+    transition: all 0.5s ease;
+}
+
+.titulo:hover{
+    font-size: 23px;
+    color: #53a7ea;
+    background: #202020;
+    }
+
+.sidebar{
+	grid-area: sidebar;
+	background-color: #202020;
+}
+
+#fotobase{
+    width: 380px;
+    height: 130px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/autocel.jpg);
+    }
+
+.main{
+	grid-area: main;
+	background-color: #202020;
+}
+
+#beneficio{
+    width: 80%;
+    height: 35%;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #202020;
+}
+
+.beneficio{
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color:#c14b2b;
+}
+
+#sorteo{
+    	width: 80%;
+    	height: 35%;
+    	background-color: #202020;
+    	margin-top:35px;
+    	margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sorteo{
+    	font-size: 16px;
+    	text-align: center;
+    	font-family: 'Nunito', sans-serif;
+    	color:#ffffff;
+    }
+
+form{
+	width: 80%;
+	text-align: center;
+	font-size: 13px;
+	background-color: #a05530;
+	margin-bottom: 40px;
+	padding: 20px;
+	border-radius: 10px;
+	margin-left:50px;
+	margin-top: 30px;
+	color:#ffffff;
+}
+textarea{
+	width: 80%;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.boton{
+	width: 150px;
+	font-family: 'Nunito', sans-serif;
+	height: 40px;
+	background-color: #1b1b1b;
+	color: #ffffff;
+	border-radius: 7px;
+	margin-top: 13px;
+	margin-left: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.boton:hover{
+    color: #000000;
+    font-weight: bolder;
+    box-shadow: inset 0 0 0 55px #53a7ea;
+    }
+
+.cajitas{
+	width:260px;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #ba6d3a;
+}
+
+#logofooter{
+width: 100px;
+height: 23px;
+background-color: #ba6d3a;
+margin-top: 3px; 
+margin-left: 5%;
+}
+
+.nombre{
+font-family: 'Nunito', sans-serif;
+font-size: 16px;
+font-weight: bolder;
+text-align: center;
+margin-top:17px;
+color:#000000;
+}
+
+#boxfooter{
+width: 250px;
+height: 23px;
+float: right;
+margin-top: -33px; 
+margin-right:3%;
+background-color: #ba6d3a;
+}
+
+.weblink{
+    	font-family: 'Nunito', sans-serif;
+    	font-size: 16px;
+    	font-weight: bolder;
+    	text-align: center;
+    	margin-top: 9px;
+    	color:#000000;
+    }
+
+    .riveraweb{
+    	text-decoration: none;
+    }
+
+    .elecciones{
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+    color:#b7411c;
+    }
+
+    #elecciones{
+    width: 350px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/tipocel.jpg);
+    }
+
+    .pantallas{
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+    color:#b7411c;
+    }
+
+    #pantallas{
+    width: 420px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/panta1cel.jpg);
+    }
+
+@media (min-width: 670px) {
+
+	.grid_container{
+
+		grid-template: 
+		"header 	header" 	100px 
+		"sidebar 	main" 		auto
+		"footer 	footer" 	75px /
+		 360px 		auto;
+ 	}
+
+ 	.titulo{
+	font-size: 28px;
+    color:#b7411c;
+	font-weight: bolder;
+	padding-top:35px;
+    margin-left: auto;
+	text-align: center;
+
+    transition: all 0.5s ease;
+    }
+
+    .titulo:hover{
+    font-size: 30px;
+    color: #53a7ea;
+    background: #202020;
+    }
+
+    #logo{
+    	width: 260px;
+    	height: 80px;
+    	background-color:#ba6d3a;
+    	margin-top: 10px; 
+    	margin-left: 5%;
+    	background-image: url(../img/logorivera.png);
+    }
+
+    #lineas1{
+    width: 56%;
+    height: 13px;
+    background-color:#202020;
+    float: right;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    margin-top:-56px;
+    }
+
+    #lineas2{
+    width: 56%;
+    height: 13px;
+    background-color:#202020;
+    float: right;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    margin-top:-29px;
+    }
+
+    #fotobase{
+    width: 250px;
+    height: 330px;
+    background-color: #ffffff;
+    margin-top: 55px; 
+    margin-left: 55px;
+    background-image: url(../img/autotablet.jpg);
+    }
+
+    #beneficio{
+        width: 100px;
+        height:5px;
+        background-color: #202020;
+
+    }
+
+    .beneficio{
+    font-size: 5px;
+    text-align: center;
+    color:#202020;
+    font-family: 'Nunito', sans-serif;
+    }
+
+    #sorteo{
+    	width: 80%;
+    	height: 80px;
+    	background-color: #202020;
+    	margin-top: 10px;
+    	margin-left: 53px;
+    }
+
+    .sorteo{
+    	font-size: 17px;
+    	text-align: center;
+    	font-family: 'Nunito', sans-serif;
+    	color:#ffffff;
+    }
+
+    form{
+	width: 80%;
+	font-size: 13px;
+	text-align: center;
+	background-color: #a05530;
+	margin-bottom: 50px;
+	padding: 16px;
+	border-radius: 10px;
+	margin-left:57px;
+	margin-top: 5px;
+	color:#ffffff;
+    }
+    textarea{
+	width: 80%;
+	height: 60px;
+	margin-top: 20px;
+    }
+
+    .boton{
+	width: 150px;
+	font-family: 'Nunito', sans-serif;
+	height: 40px;
+	background-color: #1b1b1b;
+	color: #ffffff;
+	border-radius: 7px;
+	margin-top: 13px;
+	margin-left: 10px;
+
+    transition: all 0.3s ease;
+    }
+
+    .boton:hover{
+    color: #000000;
+    font-weight: bolder;
+    box-shadow: inset 0 0 0 55px #53a7ea;
+    }
+
+    .cajitas{
+	width:220px;
+    }
+
+    #logofooter{
+    width: 160px;
+    height: 40px;
+    background-color: #ba6d3a;
+    margin-top: 8px; 
+    margin-left: 8px;
+    }
+
+    .nombre{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:23px;
+    color:#000000;
+    }
+
+    #boxfooter{
+    width: 300px;
+    height: 40px;
+    float: right;
+    background-color: #ffffff;
+    margin-top: -60px; 
+    margin-right:3%;
+    background-color: #ba6d3a;
+    }
+
+    .weblink{
+    	font-family: 'Nunito', sans-serif;
+    	font-size: 20px;
+    	font-weight: bolder;
+    	text-align: center;
+    	margin-top:24px;
+    	color:#000000;
+    }
+
+    .riveraweb{
+    	text-decoration: none;
+    }
+
+    .elecciones{
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 40px;
+    color:#b7411c;
+    }
+
+    #elecciones{
+    width: 300px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 43px; 
+    margin-left: 32px;
+    background-image: url(../img/tipotablet.jpg);
+    }
+
+    .pantallas{
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-weight: bolder;
+    margin-left: 54px;
+    margin-top: 40px;
+    color:#b7411c;
+    }
+
+    #pantallas{
+    width: 470px;
+    height: 350px;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: -10px; 
+    margin-right: 34px;
+    background-image: url(../img/panta1tablet.jpg);
+    }
+
+
+
+}
+
+
+@media (min-width: 1000px) {
+	.grid_container{
+		grid-template: 
+		"header 	header" 	100px 
+		"sidebar    main" 	    auto
+		"footer 	footer" 	75px /
+		 630px      auto;
+	}
+
+    #logo{
+    	width: 260px;
+    	height: 80px;
+    	background-color:#ba6d3a;
+    	margin-top: 10px; 
+    	margin-left: 55px;
+    	background-image: url(../img/logorivera.png);
+    }
+
+    #lineas1{
+        width: 73%;
+        height: 13px;
+        background-color:#202020;
+        float: right;
+        border-top-left-radius:20px;
+        border-bottom-left-radius: 20px;
+        margin-left: 33%;
+        margin-top:-56px;
+    }
+
+    #lineas2{
+        width: 73%;
+        height: 13px;
+        background-color:#202020;
+        float: right;
+        border-top-left-radius:20px;
+        border-bottom-left-radius: 20px;
+        margin-left: 33%;
+        margin-top:-29px;
+    }
+
+    .titulo{
+	font-size: 40px;
+    color:#b7411c;
+	font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 75px;
+	text-align: center;
+
+    transition: all 0.5s ease;
+    }
+
+    .titulo:hover{
+    font-size: 45px;
+    color: #53a7ea;
+    background: #202020;
+    }
+
+    #fotobase{
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    margin-top: 88px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/autopc.jpg);
+    }
+
+    #beneficio{
+        width: 100px;
+        height:5px;
+        background-color: #202020;
+
+    }
+
+    .beneficio{
+    font-size: 5px;
+    text-align: center;
+    color:#202020;
+    font-family: 'Nunito', sans-serif;
+    }
+
+    #sorteo{
+    	width: 80%;
+    	height: 15%;
+    	background-color: #202020;
+    	margin-top: 35px;
+    	margin-left: 76px;
+    }
+
+    .sorteo{
+    	font-size: 22px;
+    	text-align: center;
+    	font-family: 'Nunito', sans-serif;
+    	color:#ffffff;
+    }
+
+    form{
+	width: 80%;
+	font-size: 16px;
+	text-align:left;
+	padding: 2%;
+	background-color: #a05530;
+	padding-left: 30px;
+	border-radius: 23px;
+	margin-left:80px;
+	margin-top: 10px;
+	color:#ffffff;
+    }
+
+    textarea{
+	width: 47%;
+	height: 60px;
+	margin-top: 20px;
+    }
+
+    .boton{
+	width: 150px;
+	font-family: 'Nunito', sans-serif;
+	height: 40px;
+	background-color: #1b1b1b;
+	color: #ffffff;
+	border-radius: 10px;
+	margin-top: 13px;
+	margin-left: 55px;
+
+    transition: all 0.3s ease;
+    }
+
+    .boton:hover{
+    color: #000000;
+    font-weight: bolder;
+    box-shadow: inset 0 0 0 55px #53a7ea;
+    }
+
+    .cajitas{
+	width:240px;
+    }
+
+    #cuadradosorteo {
+    width: 270px;
+    height: 360px;
+    background-color: #a05530;
+    background-image: url(../img/riverasorteo.png) ;
+    float: left;
+    margin-top: -373px;
+    margin-left: 310px;
+    }
+
+    #logofooter{
+    width: 200px;
+    height: 50px;
+    background-color: #ba6d3a;
+    margin-top: 8px; 
+    margin-left: 25px;
+    }
+
+    .nombre{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:23px;
+    color:#000000;
+    }
+
+    #boxfooter{
+    width: 450px;
+    height: 60px;
+    float: right;
+    background-color: #ffffff;
+    margin-top: -65px; 
+    margin-right:3%;
+    background-color: #ba6d3a;
+    }
+
+    .weblink{
+    	font-family: 'Nunito', sans-serif;
+    	font-size: 26px;
+    	font-weight: bolder;
+    	text-align: center;
+    	margin-top: 16px;
+    	color:#000000;
+    }
+
+    .riveraweb{
+    	text-decoration: none;
+    }
+
+    .elecciones{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-top: 80px;
+    color:#b7411c;
+    }
+
+    #elecciones{
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 73px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/tipo.jpg) ;
+    }
+
+    .pantallas{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+    margin-left:90px;
+    margin-top: 80px;
+    color:#b7411c;
+    }
+
+    #pantallas{
+    width: 550px;
+    height: 400px;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 9px; 
+    margin-right: 80px;
+    background-image: url(../img/panta1.jpg) ;
+    }
+
+    #barra{
+        width: 70px;
+        height: 100%;
+        float: left;
+        margin-left: 20px;
+        background-color: #000000;
+    }
+
+
+}
